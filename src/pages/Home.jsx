@@ -1,21 +1,21 @@
 import { Link } from "react-router-dom"
 import { useState } from "react"
-import axios from "../utilities/axios"
+
 
 const Home = () => {
-    const [data, setData] = useState([]);
-    const [loading, setLoading] = useState(false);
+    // const [data, setData] = useState([]);
+    // const [loading, setLoading] = useState(false);
 
-    const fetchData = async () => {
-        setLoading(true);
-        try {
-            const response = await axios.get("/posts");
-            setData(response.data);
-        } catch (error) {
-            alert("Failed to fetch data.");
-        }
-        setLoading(false);
-    };
+    // const fetchData = async () => {
+    //     setLoading(true);
+    //     try {
+    //         const response = await axios.get("/posts");
+    //         setData(response.data);
+    //     } catch (error) {
+    //         alert("Failed to fetch data.");
+    //     }
+    //     setLoading(false);
+    // };
 
     return (
         <section className="min-h-screen bg-white text-gray-800 px-6 md:px-20 py-16">
